@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctico : Front End - HTML </title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 2px solid black;
+            padding: 6px;
+            text-align: center;
+        }
+
+        tfoot{
+            font-weight: bold;
+        }
+        caption{
+            caption-side: bottom;
+        }
+        header,footer{
+            background-color: lightseagreen;
+            text-align: center;
+
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><u>Estructura básica de un documento HTML</u></h1>
+        <p>Se presenta este documento como parte del <u>primer trabajo práctico</u> correspondiente a <em>Programación 3. </em></p>
+    </header>
+    <main>
+        <section>
+            <h2>Indice</h2>
+            <a href="#encabezados">Ir a Encabezados</a></br>
+            <a href="#enlaces">Ir a Enlaces y Listas</a></br>
+            <a href="#multimedia">Ir a Multimedia</a></br>
+            <a href="#tablas">Ir a Tablas</a></br>
+            <a href="#formulario">Ir a Formulario</a></br>
+        </section>
+    <section>
+        <h2><a name="encabezados"></a>Seccion de encabezados</h2>
+            <h2>Encabezado de tipo 2</h2>
+            <h3>Encabezado de tipo 3</h3>
+            <h4>Encabezado de tipo 4</h4>
+            <h5>Encabezado de tipo 5</h5>
+            <h6>Encabezado de tipo 6</h6>
+        
+       
+    </section>
+    
+    <section>
+        <h2> <a name="enlaces"></a>Enlaces y Listas</h2>
+        <h3>Enlace externo</h3>
+            <nav>
+                <a href="https://www.youtube.com" target="_blank"> Ir a <b>Youtube</b></a>
+            </nav>
+        
+            
+       <h3>Listas</h3>
+        <ol> <h4>Lista ordenada</h4>
+            <li>Primer item</li>
+            <li>Segundo item</li>
+            <li>Tercer item</li>
+            </ol>
+    
+        <ul><h4>Lista no ordenada</h4>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        
+    </section>
+    
+    <section>
+        <h2><a name="multimedia"></a>Multimedia</h2>
+        <p><mark>En esta sección mostraremos contenido relacionado al logotipo de Google</mark> </p>
+        <h3> Imagen</h3>
+        <img src="https://concepto.de/wp-content/uploads/2018/09/google-e1537467715310.jpg" width="200px" height="150px" alt="Imagen"/>  
+        <h3>Video</h3>
+        <video src="https://cdn.pixabay.com/video/2022/01/11/104075-665045390_large.mp4" width="200px" height="150px" controls/>
+        <article>
+        <h3>Audio</h3> 
+        <audio src="https://download.blender.org/peach/trailer/trailer_1080p.ogg" controls />
+        </article>
+    </section>
+
+    <section>
+        <h2><a name="tablas"></a>Tablas</h2>
+        <table>
+            <caption>Tabla de ejemplo</caption>
+            <thead>
+                <tr>
+                    <th>Columna 1</th>
+                    <th>Columna 2</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Fila 1</td>
+                    <td>Fila 1</td>
+                </tr>
+                <tr>
+                    <td>Fila 2</td>
+                    <td>Fila 2</td>
+                </tr>
+                <tr>
+                    <td>Fila 3</td>
+                    <td>Fila 3</td>
+                </tr>
+
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <th>Total 1</th>
+                <th>Total 2</th>
+              </tr>      
+            </tfoot>
+         </table>
+    </section>
+        
+    <section>
+        <h2><a name="formulario"></a>Formulario</h2>
+            <form>
+                <div>
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Ingrese su nombre">
+                </div>
+                <div>
+                    <label>Apellido</label>
+                    <input type="text" placeholder="Ingrese su apellido">
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="email" placeholder="Ej: pepito45@hotmail.com">
+                </div>
+                <div>
+                    <label>Motivos para elegir a la UTN</label>
+                    <textarea placeholder="Ingrese los motivos" ></textarea>
+                </div>
+                <button>Enviar formulario</button>
+            </form>
+        
+    </section>
+
+</main>
+
+<footer>
+    <p>Creado por Gerónimo Crescitelli. 2024</p>
+</footer>
+
+</body>
+
+</html>
